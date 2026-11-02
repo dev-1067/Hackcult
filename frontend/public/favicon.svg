@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="16" fill="#2a231d"/>
+  <text x="32" y="47" text-anchor="middle" font-family="Noto Serif Devanagari, Nirmala UI, Mangal, serif" font-size="34" font-weight="600" fill="#f3ece0">लि</text>
+  <path d="M11 19.5h42" stroke="#d2603f" stroke-width="3.5" stroke-linecap="round"/>
+</svg>

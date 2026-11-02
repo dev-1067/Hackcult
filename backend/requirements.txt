@@ -1,0 +1,36 @@
+# Web / API
+fastapi==0.162.0
+uvicorn[standard]==0.54.0
+python-multipart==0.0.33
+pydantic==2.14.2
+pydantic-settings==2.16.2
+httpx==0.28.1
+
+# Data
+SQLAlchemy==2.1.6
+
+# Security
+PyJWT==2.15.1
+argon2-cffi==25.1.0
+
+# Imaging / OCR
+numpy==2.5.4
+opencv-python-headless==5.0.0.93
+pillow==13.0.0
+scikit-image==0.26.0
+pypdfium2==5.14.0
+rapidocr==3.10.0
+onnxruntime==1.31.1
+# Correct Indic text shaping for the OCR Lab's synthetic pages
+uharfbuzz==0.57.0
+freetype-py==2.5.1
+
+# Optional cloud engine + translation (only used when ANTHROPIC_API_KEY is set)
+anthropic==2.3.0
+
+# Language
+indic_transliteration==2.3.82
+RapidFuzz==3.14.6
+
+# Tests
+pytest==9.2.0

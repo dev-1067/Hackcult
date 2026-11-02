@@ -1,0 +1,210 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------- Design tokens: ink on paper, with a sindoor accent ---------- */
+:root {
+  --bg: #f6f3ed;
+  --surface: #ffffff;
+  --surface-2: #f2ede4;
+  --surface-3: #ebe4d8;
+  --line: #e4ddd1;
+  --line-strong: #d4cabb;
+  --ink: #1f1a15;
+  --ink-2: #4a423a;
+  --muted: #7a7064;
+  --accent: #b2472d;
+  --accent-hover: #983b24;
+  --accent-soft: #f7e6df;
+  --accent-ink: #ffffff;
+  --indigo: #2e4374;
+  --indigo-soft: #e6eaf4;
+  --good: #2f7a4b;
+  --good-soft: #e3f1e7;
+  --warn: #9a6512;
+  --warn-soft: #f8eed8;
+  --bad: #b4372f;
+  --bad-soft: #f8e3e0;
+  --sidebar: #1c1814;
+  --sidebar-2: #26201b;
+  --sidebar-ink: #efe7da;
+  --sidebar-muted: #a3988a;
+  --shadow: 0 1px 2px rgb(31 26 21 / 0.05), 0 2px 8px rgb(31 26 21 / 0.04);
+  --shadow-lg: 0 10px 40px rgb(31 26 21 / 0.14);
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #13110f;
+  --surface: #1b1815;
+  --surface-2: #221e1a;
+  --surface-3: #2b2621;
+  --line: #2f2a24;
+  --line-strong: #3e372f;
+  --ink: #efe8dc;
+  --ink-2: #cbc2b5;
+  --muted: #988e81;
+  --accent: #e07a5f;
+  --accent-hover: #ea8f77;
+  --accent-soft: #3a221b;
+  --accent-ink: #1b1210;
+  --indigo: #9fb2e3;
+  --indigo-soft: #1f2638;
+  --good: #7cc792;
+  --good-soft: #17281d;
+  --warn: #e6b45e;
+  --warn-soft: #2e2414;
+  --bad: #f08a80;
+  --bad-soft: #351a17;
+  --sidebar: #0f0d0b;
+  --sidebar-2: #1a1714;
+  --sidebar-ink: #efe7da;
+  --sidebar-muted: #8f8577;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 10px 40px rgb(0 0 0 / 0.5);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-ink: var(--accent-ink);
+  --color-indigo: var(--indigo);
+  --color-indigo-soft: var(--indigo-soft);
+  --color-good: var(--good);
+  --color-good-soft: var(--good-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-bad: var(--bad);
+  --color-bad-soft: var(--bad-soft);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-2: var(--sidebar-2);
+  --color-sidebar-ink: var(--sidebar-ink);
+  --color-sidebar-muted: var(--sidebar-muted);
+  --shadow-card: var(--shadow);
+  --shadow-pop: var(--shadow-lg);
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Source Serif 4 Variable", ui-serif, Georgia, serif;
+  --font-script: "Noto Serif Devanagari", "Noto Sans Gujarati", "Nirmala UI", serif;
+  --font-mono: ui-monospace, "Cascadia Code", "SFMono-Regular", Menlo, monospace;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "cv11", "ss01";
+}
+
+.font-display {
+  font-optical-sizing: auto;
+  letter-spacing: -0.01em;
+}
+
+.script-text {
+  font-family: var(--font-script);
+  line-height: 1.75;
+  /* Manuscripts rarely have word spaces: let long lines wrap anywhere instead of overflowing. */
+  overflow-wrap: anywhere;
+}
+
+.font-display {
+  overflow-wrap: anywhere;
+}
+
+/* Small caps labels used throughout (section labels, table heads) */
+.eyebrow {
+  font-size: 10.5px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+::selection {
+  background: var(--accent-soft);
+}
+
+/* Paper grain for hero panels */
+.grain {
+  background-image: radial-gradient(rgb(255 255 255 / 0.05) 1px, transparent 1px);
+  background-size: 14px 14px;
+}
+
+.scroll-thin::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: var(--line-strong);
+  border-radius: 8px;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: -200px 0;
+  }
+  to {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+.skeleton {
+  background: linear-gradient(90deg, var(--surface-2), var(--surface-3), var(--surface-2));
+  background-size: 200px 100%;
+  animation: shimmer 1.2s infinite linear;
+  border-radius: 8px;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.rise {
+  animation: rise 0.35s ease-out both;
+}
+
+.maplibregl-popup-content {
+  background: var(--surface) !important;
+  color: var(--ink);
+  border-radius: 12px !important;
+  box-shadow: var(--shadow-lg) !important;
+  padding: 12px 14px !important;
+}
+.maplibregl-popup-tip {
+  border-top-color: var(--surface) !important;
+  border-bottom-color: var(--surface) !important;
+}
+.maplibregl-ctrl-attrib {
+  font-size: 10px;
+}
