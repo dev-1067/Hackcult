@@ -4,6 +4,15 @@
 
 Built for **HackCult '26 (IIT Gandhinagar) · Track 2: Culture & Digital Heritage**.
 
+![Page viewer: an 18th-century Yajurveda folio with colour-coded line boxes beside the recognised text](docs/screenshots/04-page-viewer.jpg)
+
+| | |
+|---|---|
+| ![Review queue with character diffs](docs/screenshots/06-review.jpg) | ![Cross-script search: "dharma" finds धर्म](docs/screenshots/05-search.jpg) |
+| ![Heritage trail with road route](docs/screenshots/08-trail.jpg) | ![OCR Lab benchmark results](docs/screenshots/09-ocr-lab.jpg) |
+
+More screenshots in [`docs/screenshots`](docs/screenshots). Demo video script: [`docs/DEMO_VIDEO_SCRIPT.md`](docs/DEMO_VIDEO_SCRIPT.md).
+
 ---
 
 ## What it does
