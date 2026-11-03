@@ -31,7 +31,7 @@ For the HackCult '26 Phase 1 submission: an **unlisted YouTube video** showing t
 | 2:26 | Sidebar → **Heritage map**. Pick **IIT Gandhinagar** under *Start from*. Tick **Adalaj Stepwell**, **Dada Harir Stepwell** and **L. D. Institute of Indology** → **Plan trail** | "Every manuscript has a place. From IIT Gandhinagar I pick three sites. LipiSetu orders the stops for the shortest trip and draws the real road route: distance, driving time and visit time." |
 | 2:48 | Click **Open trail** | "The trail is shareable and opens in Google Maps for navigation." |
 | 2:55 | Sidebar → **OCR Lab**. Scroll through the results | "We measure ourselves. On aged synthetic pages with known text, our pipeline matches the strong off-the-shelf model at 3.4% character error, and it's 2.8 times better than the same recogniser without our clean-up. On real handwritten folios we read twice as much text, because stock detectors lose whole lines on pages without word spaces." |
-| 3:20 | Sidebar → **Processing jobs**, then back to **Dashboard** | "Under the hood: a crash-safe job queue with retries, engine fallback, roles and an audit log, and 24 automated tests. The code is on GitHub at dev-1067/IITG. Thank you." |
+| 3:20 | Sidebar → **Processing jobs**, then back to **Dashboard** | "Under the hood: a crash-safe job queue with retries, engine fallback, roles and an audit log, and 24 automated tests. The code is on GitHub at dev-1067/Hackcult. Thank you." |
 | 3:32 | Stop recording | |
 
 ## Upload (unlisted)
