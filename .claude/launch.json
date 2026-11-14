@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "hackculture-api",
+      "runtimeExecutable": "run_api.bat",
+      "runtimeArgs": [],
+      "port": 8000
+    },
+    {
+      "name": "hackculture-frontend",
+      "runtimeExecutable": "run_frontend.bat",
+      "runtimeArgs": [],
+      "port": 5173
+    }
+  ]
+}

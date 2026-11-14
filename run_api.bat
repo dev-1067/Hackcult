@@ -1,0 +1,3 @@
+@echo off
+cd /d "%~dp0backend"
+".venv\Scripts\python.exe" -X utf8 -m uvicorn app.main:app --reload --port 8000
